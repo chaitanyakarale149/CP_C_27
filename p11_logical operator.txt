@@ -1,29 +1,29 @@
-#include<stdio.h>
+#include <stdio.h>
+
 int main()
 {
-    int a,b;
-    float c;
-    a=5;
-    b=2;
-    c=a+b;
-    printf("Sum of %d and %d is %f\n ",a,b,c);
-    
-    c=a*b;
-    printf("Product of %d and %d is %.2f\n",a,b,c);
-     
-    c=a/b;
-    printf("Integer division of %d and %d is %f\n",a,b,c);
-    
-    c=(float)a/b;
-    printf("Real Division of %d and %d is %f\n",a,b,c);
+    int a,b,c;
+    printf("Enter the values of a,b and c \n");
+    scanf("%d %d %d",&a,&b,&c);
+    if ((a>b) && (a>c))
+    printf("a is greatest \n");
+    else if (b>c)
+    printf("b is greatest\n");
+    else
+    printf("c is the greatest\n");
+    if((a==0) || (b==0) || (c==0))
+    printf("The product of a, b and c is zero\n");
+    return 0;
 }
 
-
-
-/**********************************************************************
+/*********************************************************
 OUTPUT
-Sum of 5 and 2 is 7.000000
-Product of 5 and 2 is 10.00
-Integer division of 5 and 2 is 2.000000
-Real Division of 5 and 2 is 2.500000
-**********************************************************************/
+
+Enter the values of a,b and c 
+0
+34
+567
+c is the greatest
+The product of a, b and c is zero
+
+*********************************************************/
